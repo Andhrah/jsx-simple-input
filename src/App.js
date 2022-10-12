@@ -1,25 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+const App = () => {
+  
+  const style = {marginRight: 10}
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{margin: 30}}>
+      <label htmlFor="name" style={style}>Enter Name</label>
+      <input id="name" style={style} />
+      <button style={{backgroundColor: 'blue', color: 'white'}}>Click me</button>
     </div>
-  );
+  )
 }
 
 export default App;
